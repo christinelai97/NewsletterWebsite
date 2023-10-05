@@ -1,0 +1,520 @@
+/* resets css */
+/* preset colors for website */
+:root {
+    --primary-color: #FCFAF6;
+    --text-color: #66655B;
+    --footer-color: #111;
+    --color-hover: #f95b5b;
+    --header-color: #584d4d;
+    --article-header-color: #F0E9D7;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    object-fit: cover;
+}
+
+.wrapper {
+    margin: 0 5%;
+}
+
+/************ CSS for navbar ************/
+.navbar {
+    background-color: var(--primary-color);
+    /* use flex display to separate logo element from list element */
+    /* elements are always fluid with flexbox */
+    display: flex;
+    justify-content: space-around;
+    /* aligns every element under navbar vertically aligns, specifically the logo */
+    align-items: center;
+    font-size: 20px;
+    border-bottom: solid;
+
+}
+
+/* sets the new icon to an absolute position */
+.navbar .container-icon {
+    position: absolute;
+    left: 20px;
+}
+
+/* class for navbar icon */
+.primary-icon {
+    height: 40px;
+}
+
+
+.navbar a {
+    /* removes the underline from a tag */
+    text-decoration: none;
+    color: var(--text-color);
+
+}
+
+/* hover color for navbar */
+.navbar a:hover {
+    cursor: pointer;
+    color: var(--color-hover);
+
+}
+
+.nav-list {
+    /* removes bullet points from list */
+    list-style-type: none; 
+    padding-left: 15px;
+
+}
+
+.nav-list .list-item {
+    /* displays list items side by side */
+    display: inline-block;
+    /* adds padding between list items */
+    padding: 20px 10px;
+}
+
+/* hides menu while screen is full size */
+.menu {
+    display: none;
+}
+
+/* css for hamburger menu  */
+.menu-line {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin-bottom: 4px;;
+}
+
+
+
+.header-text {
+    display: flex;
+    justify-content: left;
+    font-size: 50px;
+}
+
+
+/************ homepage first article  ************/
+h3 {
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+p {
+    font-size: 24px;
+}
+
+/* flex display parent container */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 9rem;
+    /* align-items: center; */
+    
+}
+
+
+.flex-container-2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+/* flex container child item 1 */
+.flex-item-1 {
+    width: 50%;
+    height: auto;
+    text-align: left;
+    margin-right: 25px;
+    padding-bottom: 10px;
+}
+
+.flex-item-1 a {
+    text-decoration: none;
+    color: black;
+    max-height: auto;
+}
+
+a h3:hover {
+    cursor: pointer;
+    color: var(--color-hover)
+}
+
+/* flex container child item 2 */
+.flex-item-2 {
+    width: 50%;
+    height: auto;
+
+}
+
+.flex-item-2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+
+}
+
+.flex-container.mid {
+    margin: 0;
+}
+
+
+/************ middle flex items on home page ************/
+.flex-item-1.mid {
+    margin-right: 0;
+    margin-left: 25px;
+    padding: 0;
+}
+
+.flex-item-2.mid {
+    margin: 0 25px 25px 25px;
+}
+
+.flex-item-2.mid p {
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.flex-item-2.mid p:hover {
+    color: var(--color-hover);
+}
+
+.flex-item-2 a {
+    text-decoration: none;
+    color: black;
+    max-height: auto;
+}
+
+.flex-item-2
+
+
+.flex-item-3 {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    margin-right: 25px;
+    padding: 10% 0;
+}
+
+.flex-item-4 {
+    width: 30%;
+    height: auto;
+    margin: 0 25px 25px 0;
+    padding: 5% 0;
+}
+
+.flex-item-4 img {
+    
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+/* News article pages */
+.headline-text {
+    display: flex;
+    justify-content: left;
+    font-size: 50px;
+    margin-top: 2rem;
+}
+
+.page-header {
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+    background-color: var(--article-header-color);
+}
+
+
+.article-format {
+    width: 70%;
+    margin: 0;
+    padding: 0;
+}
+
+.article-format p {
+    padding: 25px 0;
+}
+
+.article-headline img {
+    width: 100%;
+    height: 90vh;
+    border-radius: 15px;
+    margin-bottom: 10rem;
+}
+
+.article-format img {
+    width: 100%;
+    height: 90vh;
+
+}
+
+.flex-container.bottom {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+/* 
+.article-2 {
+    border-top: solid;
+
+}
+
+.article-2 img {
+    width: 100%;
+    height: 500px;
+    margin-top: 3rem;
+    border-radius: 15px;
+}
+
+.article-2 a {
+    text-decoration: none;
+    color: black;
+    max-height: auto;
+} */
+
+
+
+
+
+
+/************ footer css  ************/
+footer {
+    /* position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    background: var(--footer-color);
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    width: 100vw;
+    color: white; 
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    /* height of newsletter line box */
+    line-height: 3rem;
+}
+
+footer p {
+    max-width: 450px;
+    margin: 10px auto;
+    padding-bottom: 40px;
+    line-height: 28px;
+    font-size: 15px;
+    color: #cacdd2;
+
+}
+
+.footer-menu {
+    margin: 0 auto 20px
+}
+
+
+
+.footer-menu ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-menu ul li {
+    list-style-type: none;
+    padding-right: 10px;
+    display: block;
+
+}
+
+.footer-menu ul li a {
+    text-decoration: none;
+    border: 1.3px solid white;
+    border-radius: 50px;
+    padding: 6px 15px;
+    color: #cacdd2;
+}
+
+.footer-menu ul li a:hover {
+    cursor: pointer;
+    color: var(--color-hover);
+}
+
+@media all and (max-width: 800px) {
+    .article-format {
+        width: 100%;
+    }
+}
+
+/************ css for smaller screen size ************/
+@media all and (max-width: 600px) {
+
+    h3 {
+        font-size: 24px;
+        padding-bottom: 25px;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+
+    /* stacks nabvar items on top of one another */
+    .navbar {
+        flex-direction: column;
+        border-bottom: solid;
+    }
+
+    .navbar .container-icon {
+        position: relative;
+        width: 100%;
+        padding-bottom: 8px;
+    }
+    
+    /* class and position for hamburger menu */
+    .menu {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 24px;
+    }
+
+    .menu:hover {
+        cursor: pointer;
+    }
+
+    .nav-list .list-item {
+        display: block;
+        padding: 20px 10px;
+    }
+
+    .nav-list {
+        list-style-type: none;
+        width: 100%;
+        padding-top: 10px;
+        display: none;
+    }
+
+    .primary-icon {
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    /* homepage */
+
+    .flex-container.mid {
+        flex-direction: row;
+    }
+
+    .flex-item-1.mid {
+        width: 100%;
+        margin: 0;
+    }
+    .flex-item-2.mid {
+        width: 50%;
+        margin: 25px 25px 0 0;
+    }
+    
+    .flex-item-2.mid p {
+        text-decoration: underline;
+        font-size: 20px;
+    }
+
+    .headline-text {
+        font-size: 30px;
+    }
+
+    .header-text {
+        font-size: 30px;
+    }
+
+    .flex-item-4 p {
+        font-size: 15px;
+    }
+
+
+
+    /* converts display for smaller screens to flex: column */
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        /* align-items: center; */
+        
+    }
+
+    .flex-container.article {
+        margin: 0;
+    }
+
+    .flex-item-1, .flex-item-2, .flex-item-3, .article-format {
+        width: 100%;
+    }
+
+    .article-headline img {
+        width: 100%;
+        height: 90vh;
+        border-radius: 15px;
+        margin-bottom: 1rem;
+    }
+
+    .flex-container.bottom {
+        flex-direction: row;
+    }
+    .flex-item-4 {
+        width: 50%;
+    }
+
+    
+
+    /* css to display drop down menu on click */
+    .active {
+        display:block;
+        border-top: solid;
+    }
+
+    .remove-border {
+        border-bottom: none;
+    }
+
+
+    .footer-menu ul {
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    .footer-menu ul li {
+        margin-bottom: 25px;
+    }
+}
+
